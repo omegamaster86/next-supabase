@@ -1,10 +1,11 @@
-import BBSCardList from "./components/BBSCardList";
+import TaskTable from "@/app/components/taskTable";
 
-export default function Home() {
+export default async function Index() {
+
   return (
-    <main>
-      <BBSCardList/>
-    </main>
-  );
+    <div className="flex-1 w-full flex flex-col gap-20 items-center pt-24">
+      <TaskTable />
+    </div>
+  )
 }
 
